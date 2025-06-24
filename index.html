@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton's Group</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <!-- Import bootstrap for styling Elements such as grids containers etc.. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Import Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://hamiltons.group/wp-content/uploads/2023/12/hamiltons-group-of-consultants-2.png" alt="Hamilton's Group Logo" class="logo">
+                <b>Hamilton's Group of Consultants</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="buttons">
+                            <button class="btn"><span></span><p data-start="good luck!" data-text="Same Day" data-title="Get a Quote"></p></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container-fluid text-center px-5">
+            <!-- Two columns, one containing text, the other containing the video -->
+            <div class="row banner">
+                <div class="col-md-6 banner-text">
+                    <h1 class="">Solutions:<br/>For the Growing Construction Company</h1>
+                    <div style="align-items: start; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <div class="buttons">
+                            <button class="btn"><span></span><p data-start="good luck!" data-text="Call Us" data-title="Interested?"></p></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <video autoplay muted loop class="background-video">
+                        <source src="./assets/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="services animate-on-scroll">
+            <div class="container-fluid">
+                <h2 id="service-header" class="text-center mb-4" >Our Commercial Services for Landscaping Companies across North America</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service-wrapper">
+                            <div class="service-box">
+                                <img src="./assets/truck.svg" alt="Landscape Construction Management" class="icon">
+                                <h3>Landscape Construction Management</h3>
+                                <p>lorem ipsum filler</p>
+                            </div>
+                            <a href="https://www.hamiltonsgroup.com/landscape-construction-management" class="learn-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-wrapper">
+                            <div class="service-box">
+                                <img src="./assets/calendar.svg" alt="Contract Review" class="icon">
+                                <h3>Landscaping Construction Estimation</h3>
+                                <p>lorem ipsum filler</p>
+                            </div>
+                            <a href="https://www.hamiltonsgroup.com/landscape-construction-management" class="learn-more">Learn More</a>
+                        </div>  
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-wrapper">
+                            <div class="service-box">
+                                <img src="./assets/alert-circle.svg" alt="Contract Review" class="icon">
+                                <h3>Contract Review</h3>
+                                <p>lorem ipsum filler</p>
+                            </div>
+                            <a href="https://www.hamiltonsgroup.com/landscape-construction-management" class="learn-more">Learn More</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-wrapper">
+                            <div class="service-box">
+                                <img src="./assets/clipboard.svg" alt="Contract Review" class="icon">
+                                <h3>Contract Review</h3>
+                                <p>lorem ipsum filler</p>
+                            </div>
+                            <a href="https://www.hamiltonsgroup.com/landscape-construction-management" class="learn-more">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="image-background">
+            <svg id="visual" viewBox="0 0 900 450" width="900" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="100vw" height="450" fill="#2D4F2B" opacity="0"/>
+                <path d="M527 0L435 0L435 25L301 25L301 50L647 50L647 75L376 75L376 100L370 100L370 125L264 125L264 150L474 150L474 175L335 175L335 200L360 200L360 225L629 225L629 250L475 250L475 275L418 275L418 300L331 300L331 325L425 325L425 350L654 350L654 375L423 375L423 400L543 400L543 425L272 425L272 450L0 450L0 425L0 425L0 400L0 400L0 375L0 375L0 350L0 350L0 325L0 325L0 300L0 300L0 275L0 275L0 250L0 250L0 225L0 225L0 200L0 200L0 175L0 175L0 150L0 150L0 125L0 125L0 100L0 100L0 75L0 75L0 50L0 50L0 25L0 25L0 0L0 0Z" fill="#fff" opacity=".5"/>
+                <path d="M469 0L523 0L523 25L330 25L330 50L371 50L371 75L474 75L474 100L569 100L569 125L499 125L499 150L398 150L398 175L483 175L483 200L280 200L280 225L373 225L373 250L485 250L485 275L432 275L432 300L416 300L416 325L284 325L284 350L223 350L223 375L280 375L280 400L453 400L453 425L541 425L541 450L0 450L0 425L0 425L0 400L0 400L0 375L0 375L0 350L0 350L0 325L0 325L0 300L0 300L0 275L0 275L0 250L0 250L0 225L0 225L0 200L0 200L0 175L0 175L0 150L0 150L0 125L0 125L0 100L0 100L0 75L0 75L0 50L0 50L0 25L0 25L0 0L0 0Z" fill="#fff" opacity="1"/>
+                <path d="M467 0L249 0L249 25L434 25L434 50L367 50L367 75L418 75L418 100L288 100L288 125L245 125L245 150L216 150L216 175L346 175L346 200L324 200L324 225L227 225L227 250L191 250L191 275L220 275L220 300L272 300L272 325L474 325L474 350L357 350L357 375L434 375L434 400L204 400L204 425L164 425L164 450L0 450L0 425L0 425L0 400L0 400L0 375L0 375L0 350L0 350L0 325L0 325L0 300L0 300L0 275L0 275L0 250L0 250L0 225L0 225L0 200L0 200L0 175L0 175L0 150L0 150L0 125L0 125L0 100L0 100L0 75L0 75L0 50L0 50L0 25L0 25L0 0L0 0Z" fill="#c4cfb9" opacity=".7"/>
+                <path d="M294 0L275 0L275 25L279 25L279 50L275 50L275 75L216 75L216 100L188 100L188 125L129 125L129 150L244 150L244 175L346 175L346 200L139 200L139 225L275 225L275 250L347 250L347 275L183 275L183 300L301 300L301 325L120 325L120 350L302 350L302 375L289 375L289 400L214 400L214 425L144 425L144 450L0 450L0 425L0 425L0 400L0 400L0 375L0 375L0 350L0 350L0 325L0 325L0 300L0 300L0 275L0 275L0 250L0 250L0 225L0 225L0 200L0 200L0 175L0 175L0 150L0 150L0 125L0 125L0 100L0 100L0 75L0 75L0 50L0 50L0 25L0 25L0 0L0 0Z" fill="#a8b797" opacity=".7"/>
+                <path d="M89 0L230 0L230 25L281 25L281 50L112 50L112 75L189 75L189 100L276 100L276 125L75 125L75 150L85 150L85 175L82 175L82 200L263 200L263 225L73 225L73 250L147 250L147 275L247 275L247 300L245 300L245 325L73 325L73 350L166 350L166 375L169 375L169 400L101 400L101 425L279 425L279 450L0 450L0 425L0 425L0 400L0 400L0 375L0 375L0 350L0 350L0 325L0 325L0 300L0 300L0 275L0 275L0 250L0 250L0 225L0 225L0 200L0 200L0 175L0 175L0 150L0 150L0 125L0 125L0 100L0 100L0 75L0 75L0 50L0 50L0 25L0 25L0 0L0 0Z" fill="#8ca077" opacity=".8"/>
+                <path d="M100 0L38 0L38 25L172 25L172 50L183 50L183 75L146 75L146 100L121 100L121 125L29 125L29 150L178 150L178 175L44 175L44 200L131 200L131 225L33 225L33 250L159 250L159 275L30 275L30 300L138 300L138 325L47 325L47 350L181 350L181 375L136 375L136 400L180 400L180 425L133 425L133 450L0 450L0 425L0 425L0 400L0 400L0 375L0 375L0 350L0 350L0 325L0 325L0 300L0 300L0 275L0 275L0 250L0 250L0 225L0 225L0 200L0 200L0 175L0 175L0 150L0 150L0 125L0 125L0 100L0 100L0 75L0 75L0 50L0 50L0 25L0 25L0 0L0 0Z" fill="#708a58" opacity="1"/>
+            </svg>
+        </div>
+
+        <section id="process" class="container bg-light p-5">
+            <h4 class="text-center">Our Process</h4>
+            <p class="text-center">We follow a streamlined process to ensure the best results for our clients.</p>
+            <div class="cube-wrapper trigger-animate">
+                <div class="cube">
+                    <div class="cube-image-container">
+                        <div class="text-center container-fluid">
+                            <p style="height: 150px; line-height: 150px; font-size: 4em;">01</p>
+                        </div>
+                    </div>
+                    <div class="cube-text">
+                        <h5>Step 1: Consultation</h5>
+                        <p >We start with a detailed consultation to understand your needs and requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cube-wrapper trigger-animate">
+                <div class="cube">
+                    <div class="cube-image-container">
+                        <div class="text-center container-fluid">
+                            <p style="height: 150px; line-height: 150px; font-size: 4em;">02</p>
+                        </div>
+                    </div>
+                    <div class="cube-text">
+                        <h5>Step 2: Planning</h5>
+                        <p >We create a detailed project plan to outline the scope, timeline, and deliverables.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cube-wrapper trigger-animate">
+                <div class="cube">
+                    <div class="cube-image-container">
+                        <div class="text-center container-fluid">
+                            <p style="height: 150px; line-height: 150px; font-size: 4em;">03</p>
+                        </div>
+                    </div>
+                    <div class="cube-text">
+                        <h5>Step 3: Execution</h5>
+                        <p >We implement the project plan with a focus on quality and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cube-wrapper trigger-animate">
+                <div class="cube">
+                    <div class="cube-image-container">
+                        <div class="text-center container-fluid">
+                            <p style="height: 150px; line-height: 150px; font-size: 4em;">04</p>
+                        </div>
+                    </div>
+                    <div class="cube-text">
+                        <h5>Step 4: Delivery</h5>
+                        <p >We deliver the final product and ensure it meets your expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./assets/Team_2.png" alt="Team Image" class="img-fluid">
+                </div>
+                <div class="col-md-6" style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                    <h4 class="text-center">Estimation Services Explanation</h4>
+                    <p class="text-center">We provide accurate and timely estimates to help you plan your projects effectively.</p>
+                    <div class="buttons">
+                        <button class="btn"><span></span><p data-start="good luck!" data-text="Earn More" data-title="Learn More"></p></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="final" class="mt-5 faded-background-image">
+            <div class="white">
+            </div>
+            <div class="content-above" style="align-items: start; display: flex; flex-direction: column; justify-content: center;">
+                <h4>How Outsourcing Landscaping Cost Estimation Improves Construction Field Efficiency</h4>
+                <p>In the fast-paced and highly competitive world of construction, efficiency and accuracy are paramount. Among the many phases of a construction project, landscaping is often one of the last yet most visible components. Accurate and timely estimation of landscaping costs is critical—not only to stay within budget but to meet deadlines and maintain project momentum. Outsourcing this task to specialized estimating professionals can be a strategic move that significantly enhances output and operational efficiency.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="container" style="margin-top: 12%;">
+            <div id="contactForm" class="mt-4">
+                <h4 class="text-center">Contact Us</h4>
+                <p class="text-center">Fill out the form below and we will get back to you as soon as possible.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea class="form-control" id="messageInput" rows="3" placeholder="Write your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid mt-5 pt-4 pb-2">
+        <div class="row text-center overflow-hidden">
+            <div class="col-md-3">
+                <a href="" class="logo-link">
+                    <img loading="lazy" decoding="async" width="200" height="150" src="./assets/logo.jpg" alt="HamiltonsGroup Logo" title="HamiltonsGroup-tiny-icon" sizes="(max-width: 320px) 100vw, 320px" class="image-fluid">
+                </a>
+                <div class="logo-phone">
+                    <p>(123) 456-7890</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-areas-title">
+                    <h4>Service Areas</h4>
+                    <p>Hamilton • Toronto • Burlington • Oakville • Mississauga • St. Catharines • Grimsby • Brantford • Etobicoke • Milton</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Quicklinks</h4>
+                <p>
+                    <a href="">Home</a>
+                    <br>
+                    <a href="">Blog</a>
+                    <br>
+                    <a href="">Contact Us</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h4>Contact</h4>
+                <p>
+                    <strong>Email:</strong> <span>
+                    <br>
+                    </span>
+                    <a href="mailto:">info@hamiltonsgroup.com</a>
+                </p>
+                <p>
+                    <strong>Phone:</strong>
+                    <br>
+                    <a href="tel:">(123) 456-7890</a>
+                </p>
+                <h5>Open 24/7</h5>
+            </div>
+        </div>
+        <div class="col text-center">
+            <p>© HamiltonsGroup 2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script defer>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animate')) {
+                    entry.target.classList.add('animate');
+                } else {
+                    
+                }
+            });
+        }, { threshold: 0.6 });
+
+        // Observe all sections with the class 'animate-on-scroll'
+        const processAnimations = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-animate');
+                } else {
+                    entry.target.classList.remove('slide-animate');
+                }
+            });
+        }, { threshold: 1 });
+        
+
+        document.querySelectorAll('.animate-on-scroll').forEach((section) => {
+            observer.observe(section);
+        });
+
+        document.querySelectorAll('.trigger-animate').forEach((cube) => {
+            processAnimations.observe(cube);
+        });
+
+    </script>
+</body>
+</html>

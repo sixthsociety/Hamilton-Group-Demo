@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Primary colors: */
+:root {
+    --primary-color: #2D4F2B;
+    --secondary-color: #829E67;
+    --accent-color: #ffe6b0;
+    --background-color: #FFF1CA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.logo{
+    width: 50px;
+    height: auto;
+}
+.navbar-brand b {   
+    color: var(--primary-color);
+}
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+.animate-on-scroll{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animate {
+    opacity: 1;
+}
+
+#service-header{
+    color: black;
+}
+
+.service-wrapper {
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-box {
+    height: 300px;
+}
+
+.icon{
+    width: 107px;
+    height: 107px;
+    margin-bottom: 10px;
+}
+.learn-more{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: 3px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+.learn-more:hover {
+    color: black;
+    text-decoration: underline;
+    border-top: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+
+}
+
+.service-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.services {
+    min-height: 70vh;
+    padding: 30px;
+    margin-top: 5%;
+}
+
+.services .container{
+    padding: 20px 30px;
+}
+
+.services h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.service-areas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+h1{
+    text-align: left;
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+h1 b {
+    color: var(--secondary-color);
+}
+h2 b{
+    color: var(--primary-color);
+    /* Italic */
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 0.8em;
+    color: black;
+    text-transform: none;
+}
+
+/* Animate the hover with a slideing udnerline for the nav-link */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.image-background {
+    background-image: url('./assets/thermea-5.jpeg');
+    background-size: cover;
+    background-position: center;
+    animation: backgroundScroll 30s linear infinite;
+}
+
+#process {
+    border-radius: 25px;
+}
+
+.cube {
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    transition: width .9s ease;
+}
+
+
+.slide-animate .cube {
+    width: 100%;
+}
+
+.cube-image-container {
+    background-color: var(--secondary-color);
+    width: 150px;
+    height: 150px;
+}
+
+.cube-text{
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 0;
+    transition: width 0.9s ease;
+    background-color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-animate .cube-text {
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+}
+@media (min-width: 990.1px) {
+    .cube-text h5{
+        padding-left: 15%;
+    }
+    .cube-text p{
+        padding-left: 15%;
+    } 
+}
+
+@media (max-width: 990px) {
+    .cube-text h5{
+        font-size: 18px;
+        margin-right: 15px;
+        padding-left: none;
+    }
+    .cube-text p{
+        font-size: 16px;
+        padding-left: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .cube-image-container {
+        display: none;
+    }
+    .cube-text h5{
+        padding-left: none;
+    }
+    .cube-text p{
+        padding-left: none;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+}
+.logo-phone{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer h4, footer h5 {
+    color: white;
+    margin-bottom: 10px;
+}
+footer p {
+    color: white;
+    margin: 0;
+}
+footer a {
+    color: #c7b4f8;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #c7b4f8;
+    text-decoration: underline;
+}
+/* Banner */
+.banner-text{
+    text-align: start;
+    align-self: center;
+}
+/* All caps, large font, bold and wide */
+.banner-text h1 {
+    text-align: start;
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1000px) {
+    .banner-text h1 {
+        font-size: 2em;
+        margin-left: 10px;
+    }
+
+}
+
+.banner {
+    overflow: hidden;
+    height: 80vh;
+}
+/* Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47vw;
+    height: 80vh;
+    object-fit: cover;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .background-video {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .services {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+        margin-left: 10px;
+    }
+    .service-areas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#testimonials{
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+}
+
+.faded-background-image{
+    background-image: url('./assets/thermea-5.jpeg');
+    min-height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+}
+.white{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background: linear-gradient(72deg,#FFFFFF 0%,#FBFBFBF8 51%,#FEFEFE4D 72%,#FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+
+.content-above{
+    min-height: 650px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    max-width: 51%;
+    z-index: 200;
+}
+
+@media screen and (max-width: 1000px) {
+    .content-above{
+        max-width: 90%;
+        z-index: 200;
+    }
+}
+
